@@ -5,11 +5,11 @@ import torch
 from torch import nn
 import os
 
-print(os.getcwd())
+os.chdir(os.path.join(os.getcwd(), os.pardir, os.pardir))
 
 app = FastAPI()
 
-model_path = "model_state_dict.pt"
+model_path = "models/model_state_dict.pt"
 MODEL = f"cardiffnlp/twitter-roberta-base-sentiment-latest"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

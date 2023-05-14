@@ -29,7 +29,16 @@ Project Organization
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
     │   │   ├── predict_model.py
-    └── └── └── train_model.py
+    │   │   ├── train_model.py
+    │   │   └── test_model.py
+    │   │  
+    └── └── app            <- Contains scripts to execute both the API and the Streamlit app
+            │
+            ├── main.py
+            ├── streamlit.py
+            └── users_feedback.xlsx
+
+
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
