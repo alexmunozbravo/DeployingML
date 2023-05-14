@@ -43,7 +43,7 @@ def main():
 
     tokenizer = AutoTokenizer.from_pretrained(MODEL)
     model = RoBERTaEncoder(2)
-    model.load_state_dict(torch.load("./models/model.pt", map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load("./models/model_state_dict.pt", map_location=torch.device('cpu')))
     model = model.to(device)
 
     # Transform the input sequence into tokens
