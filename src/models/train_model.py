@@ -424,7 +424,7 @@ def main():
             print(f"Test mean accuracy with SBIC: {total_test_accuracy_SBIC/total_num_examples*100} %")
     
     # save the model
-    torch.save(model, "./models/model.pt")
+    torch.save(model.state_dict(), "./models/model.pt")
 
 
 if __name__ == "__main__":
